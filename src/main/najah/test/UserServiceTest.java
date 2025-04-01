@@ -77,7 +77,7 @@ class UserServiceTest {
     @DisplayName("Test add and remove user within timeout")
     void testAddRemoveUserTimeout() {
         userService.addUser("user1", "password");
-        assertDoesNotThrow(() -> userService.removeUser("user1"), "Remove user should complete within 1 second"); // حذف المستخدم
+        assertDoesNotThrow(() -> userService.removeUser("user1"), "Remove user should complete within 1 second"); 
     }
 
     @AfterEach
